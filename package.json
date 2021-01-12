@@ -1,7 +1,26 @@
 {
-  "name": "app-with-template",
+  "name": "cra-template-kstick",
   "version": "0.1.0",
-  "private": true,
+  "author": "Kathleen Stickel",
+  "description": "a basic React template for practice",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kstick9210/cra-template-kstick",
+    "directory": "/"
+  },
+  "main": "template.json",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "cra-template",
+    "template",
+    "cinque"
+  ],
+  "files": [
+    "template",
+    "template.json"
+  ],
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
@@ -16,7 +35,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "clean-files": "rm -rf ./template/public ./template/src && rm -f ./template/.eslintrc",
+    "copy-files": "cp -a ./src/. template/src && cp -a ./public/. template/public && cp .eslintrc template/",
+    "prepublishOnly": "yarn clean-files && yarn copy-files"
   },
   "eslintConfig": {
     "extends": [

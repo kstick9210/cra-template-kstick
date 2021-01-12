@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+.App {
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #81D8F7;
+  background-color: #203878;
+}
+
+.cinque {
+  font-family: 'Patua One', sans-serif;
+  font-size: 2.7rem;
+}
